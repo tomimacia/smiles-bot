@@ -90,15 +90,15 @@ export const getFlightData = async (url) => {
       const content = await getMilesData(page, i);
       console.log(origin, destination, duration, clase, content);
       data.push({
-        originAirport: origin.airport,
-        destinationAirport: destination.airport,
-        departureTime: origin.departureTime,
-        arrivalTime: destination.arrivalTime,
+        origin: origin.airport,
+        destination: destination.airport,
+        departure: origin.departureTime,
+        arrival: destination.arrivalTime,
         stops: duration.stops,
         duration: duration.time,
         clase,
-        millas: Number(content.miles),
-        taxesMiles: Number(content.taxes),
+        miles: Number(content.miles),
+        taxes: Number(content.taxes),
         total: Math.round(Number(content.miles) + Number(content.taxes)),
       });
     }
