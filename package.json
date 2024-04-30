@@ -1,0 +1,17 @@
+{
+  "name": "bot-smiles",
+  "version": "1.0.0",
+  "description": "Smiles flights bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Tomas Macia",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^21.2.1",
+    "xlsx": "^0.18.5"
+  }
+}
